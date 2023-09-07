@@ -51,6 +51,7 @@ platform :ios do
       export_method: ENV['EXPORT_METHOD'],
       export_team_id: ENV['TEAM_ID'],
       silent: true
+      include_bitcode: false
     )
 
     if ENV["TESTFLIGHT_UPLOAD"] == 'true'
